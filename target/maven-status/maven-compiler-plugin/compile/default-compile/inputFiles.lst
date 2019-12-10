@@ -1,6 +1,10 @@
-C:\Users\Nicolas\Downloads\ProyectoArepBack\src\main\java\escuelaing\arep\app\PROYECTO\AppConfiguration.java
-C:\Users\Nicolas\Downloads\ProyectoArepBack\src\main\java\escuelaing\arep\app\PROYECTO\App.java
-C:\Users\Nicolas\Downloads\ProyectoArepBack\src\main\java\escuelaing\arep\app\PROYECTO\Service\FuncionarioService.java
-C:\Users\Nicolas\Downloads\ProyectoArepBack\src\main\java\escuelaing\arep\app\PROYECTO\Repository\FuncionarioRepository.java
-C:\Users\Nicolas\Downloads\ProyectoArepBack\src\main\java\escuelaing\arep\app\PROYECTO\Controller\FuncionarioController.java
-C:\Users\Nicolas\Downloads\ProyectoArepBack\src\main\java\escuelaing\arep\app\PROYECTO\Documents\Funcionario.java
+C:\Users\Nicolas\Downloads\ProyectoArep-BACK\src\main\java\escuelaing\arep\app\PROYECTO\Service\EstudianteService.java
+C:\Users\Nicolas\Downloads\ProyectoArep-BACK\src\main\java\escuelaing\arep\app\PROYECTO\Documents\Estudiante.java
+C:\Users\Nicolas\Downloads\ProyectoArep-BACK\src\main\java\escuelaing\arep\app\PROYECTO\Service\FuncionarioService.java
+C:\Users\Nicolas\Downloads\ProyectoArep-BACK\src\main\java\escuelaing\arep\app\PROYECTO\App.java
+C:\Users\Nicolas\Downloads\ProyectoArep-BACK\src\main\java\escuelaing\arep\app\PROYECTO\AppConfiguration.java
+C:\Users\Nicolas\Downloads\ProyectoArep-BACK\src\main\java\escuelaing\arep\app\PROYECTO\Documents\Funcionario.java
+C:\Users\Nicolas\Downloads\ProyectoArep-BACK\src\main\java\escuelaing\arep\app\PROYECTO\Controller\EstudianteController.java
+C:\Users\Nicolas\Downloads\ProyectoArep-BACK\src\main\java\escuelaing\arep\app\PROYECTO\Repository\EstudianteRepository.java
+C:\Users\Nicolas\Downloads\ProyectoArep-BACK\src\main\java\escuelaing\arep\app\PROYECTO\Repository\FuncionarioRepository.java
+C:\Users\Nicolas\Downloads\ProyectoArep-BACK\src\main\java\escuelaing\arep\app\PROYECTO\Controller\FuncionarioController.java

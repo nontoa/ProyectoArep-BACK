@@ -1,6 +1,10 @@
 escuelaing\arep\app\PROYECTO\Service\FuncionarioService.class
+escuelaing\arep\app\PROYECTO\Service\EstudianteService.class
+escuelaing\arep\app\PROYECTO\Repository\EstudianteRepository.class
 escuelaing\arep\app\PROYECTO\Controller\FuncionarioController.class
 escuelaing\arep\app\PROYECTO\AppConfiguration.class
 escuelaing\arep\app\PROYECTO\App.class
+escuelaing\arep\app\PROYECTO\Controller\EstudianteController.class
 escuelaing\arep\app\PROYECTO\Documents\Funcionario.class
 escuelaing\arep\app\PROYECTO\Repository\FuncionarioRepository.class
+escuelaing\arep\app\PROYECTO\Documents\Estudiante.class
