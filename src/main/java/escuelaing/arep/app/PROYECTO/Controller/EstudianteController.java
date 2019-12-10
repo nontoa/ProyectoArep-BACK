@@ -5,8 +5,8 @@
  */
 package escuelaing.arep.app.PROYECTO.Controller;
 
-import escuelaing.arep.app.PROYECTO.Documents.Funcionario;
-import escuelaing.arep.app.PROYECTO.Service.FuncionarioService;
+import escuelaing.arep.app.PROYECTO.Documents.Estudiante;
+import escuelaing.arep.app.PROYECTO.Service.EstudianteService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,29 +15,27 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.DeleteMapping;
 
 /**
  *
  * @author Nicolas
  */
 @RestController
-@RequestMapping("funcionario")
-public class FuncionarioController {
+@RequestMapping("estudiante")
+public class EstudianteController {
 
     @Autowired
-    private FuncionarioService funcionarioService;
+    private EstudianteService estudianteService;
 
     @CrossOrigin
-    @PostMapping(value = "/create-funcionario")
-    public ResponseEntity<?> createFuncionario(@RequestBody Funcionario funcionario) {
+    @PostMapping(value = "/create-estudiante")
+    public ResponseEntity<?> createEstudiante(@RequestBody Estudiante estudiante) {
         try {
 
-            funcionarioService.createFuncionario(funcionario);
+            estudianteService.createEstudiante(estudiante);
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.FORBIDDEN);
@@ -45,21 +43,28 @@ public class FuncionarioController {
     }
 
     @CrossOrigin
-    @GetMapping(value = "/{email}")
-    public ResponseEntity<?> funcionarioByEmail(@PathVariable("email") String email) {        
+    @GetMapping(value = "/{carne}")
+    public ResponseEntity<?> estudianteByCarne(@PathVariable("carne") Integer carne) {
         try {
-            Funcionario dish;
-            List<Funcionario> dishes = funcionarioService.findAllFuncionarios();
-            for (Funcionario d : dishes) {
-                if (d.getEmail().equals(email)) {
-                    return new ResponseEntity<>(d, HttpStatus.OK);
-                }
-            }
-            return new ResponseEntity<>(HttpStatus.OK);
+
+            Estudiante est = estudianteService.findByCarne(carne);
+            return new ResponseEntity<>(est,HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.FORBIDDEN);
         }
 
     }
+    
+    @CrossOrigin
+    @GetMapping(value = "/all-estudiantes")
+    public ResponseEntity<?> findAllEstudiantes(){
+        try {
+            List<Estudiante> est = estudianteService.findAllEstudiantes();
+            return new ResponseEntity<>(est,HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.FORBIDDEN);
+        }
+    }
 
+    
 }
